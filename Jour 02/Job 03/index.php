@@ -5,7 +5,7 @@ for ($valeur = 0; $valeur <= 100; $valeur++) {
     } else if ($valeur == 42) {
         echo "La Plateforme_<br>";
     } elseif ($valeur >= 25 && $valeur <= 50) {
-        echo "<u>$valeur</u><br>";
+        echo "<u>$valeur</u><br>";// && = entre 25 et 50
     } else {
         echo "$valeur<br>";
     }
