@@ -1,6 +1,6 @@
 <?php
 
-$hauteur = 10; // Modifiable
+$hauteur = 5; // Modifiable
 
 echo "<pre>"; // Préserve les espaces et les retours à la ligne
 for ($i = 1; $i <= $hauteur; $i++) {
