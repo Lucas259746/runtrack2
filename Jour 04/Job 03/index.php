@@ -6,7 +6,7 @@
 <body>
 
     <h2>Formulaire POST</h2>
-    <form method="POST" action="">
+    <form method="POST" action="index.php">
         <label for="nom">Nom :</label>
         <input type="text" name="nom" id="nom"><br><br>
 

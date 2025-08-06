@@ -21,7 +21,7 @@
 <body>
 
     <h2>Formulaire GET</h2>
-    <form method="get" action="">
+    <form method="get" action="index.php">
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom"><br><br>
 

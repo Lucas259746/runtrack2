@@ -21,7 +21,7 @@
 <body>
 
     <h2>Formulaire POST</h2>
-    <form method="post" action="">
+    <form method="post" action="index.php">
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom"><br><br>
 
