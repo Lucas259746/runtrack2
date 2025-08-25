@@ -26,7 +26,7 @@
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $largeur = (int) $_POST['largeur'];
     $hauteur = (int) $_POST['hauteur'];
-    $hauteur>$largeur/2?$hauteurToit=intval($largeur/2) :$hauteurToit=$hauteur; // raccourcie pour fair un bool
+    $hauteur>$largeur/2?$hauteurToit=intval($largeur/2) :$hauteurToit=$hauteur;
 
 
     echo "<pre>";
@@ -39,7 +39,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // Dessin du toit
             echo "/" . str_repeat("-",$i*2) . "\\";
             echo "<br>";  
-   }
+   
+   
+   
+    }
+
+
 
     // Dessin du corps
     for ($j = 0; $j < $hauteur; $j++) {
