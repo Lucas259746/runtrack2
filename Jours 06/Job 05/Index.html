@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire avec styles dynamiques</title>
+  <link id="theme-style" rel="stylesheet" href="style1.css"> <!-- Style par défaut -->
+  <style>
+    body {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="style-form">
+    <label for="style">Choisissez un style :</label>
+    <select name="style" id="style">
+      <option value="style1">Style 1</option>
+      <option value="style2">Style 2</option>
+      <option value="style3">Style 3</option>
+    </select>
+    <button type="submit">Appliquer le style</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('style-form');
+    const select = document.getElementById('style');
+    const stylesheet = document.getElementById('theme-style');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Empêche la soumission du formulaire
+      const selectedStyle = select.value;
+      stylesheet.href = selectedStyle + '.css'; // Change la feuille de style
+    });
+  </script>
+
+</body>
+</html>
