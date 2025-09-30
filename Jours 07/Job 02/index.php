@@ -7,8 +7,8 @@
 <body>
 
 <form method="post">
-    <button type="submit" name="saluer" value="1">Dire Bonjour</button>
-    <button type="submit" name="reset" value="1">Réinitialiser</button>
+    <button type="submit" name="jour" value="1">jour</button>
+    <button type="submit" name="nuit" value="1">nuit</button>
 </form>
 
 <?php
@@ -20,13 +20,13 @@ function bonjour($jour) {
     }
 }
 
-// Si l'utilisateur a cliqué sur "Réinitialiser"
-if (isset($_POST['reset'])) {
-    bonjour(false); // Réinitialisation → Bonsoir
+// Si l'utilisateur a cliqué sur "nuit"
+if (isset($_POST['nuit'])) {
+    bonjour(false); // nuit → Bonsoir
 }
-// Sinon, s'il a cliqué sur "Dire Bonjour"
-elseif (isset($_POST['saluer'])) {
-    bonjour(true); // Bouton "Dire Bonjour" → Bonjour
+// Sinon, s'il a cliqué sur "jour"
+elseif (isset($_POST['jour'])) {
+    bonjour(true); // Bouton "jour" → Bonjour
 }
 // Sinon (chargement initial de la page)
 else {
